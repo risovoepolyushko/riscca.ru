@@ -1,8 +1,12 @@
 body{
-    margin:0;
-    background:#f4efe6;
+   margin:0;
+    background:
+        radial-gradient(circle at top right,
+        rgba(80,60,40,0.05), transparent 40%),
+        #f4efe6;
     color:#352b22;
     font-family:Georgia, serif;
+    line-height:1.7;
 }
 
 .page{
@@ -11,9 +15,12 @@ body{
 }
 
 .sidebar{
-    width:260px;
-    padding:80px 50px;
+     width:280px;
+    padding:90px 60px;
+    background:rgba(255,255,255,0.18);
     border-right:1px solid #d8cdbd;
+    box-shadow:
+        inset -20px 0 30px rgba(0,0,0,0.03);
 }
 
 .logo-small{
@@ -31,8 +38,15 @@ body{
 .sidebar nav a{
     text-decoration:none;
     color:#352b22;
-    letter-spacing:2px;
+    letter-spacing:3px;
     font-size:14px;
+    padding:8px 0;
+    transition:0.3s;
+}
+
+.sidebar nav a:hover{
+    transform:translateX(10px);
+    opacity:0.7;
 }
 
 .hero{
@@ -46,15 +60,26 @@ body{
 }
 
 .seal{
+    width:70px;
+    height:70px;
+    border:2px solid #8b2f2f;
+    border-radius:4px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     color:#8b2f2f;
-    font-size:42px;
+    font-size:28px;
+
+    margin-bottom:30px;
 }
 
 .hero h1{
-    font-size:80px;
-    letter-spacing:14px;
+    font-size:96px;
+    letter-spacing:18px;
     font-weight:300;
-    margin:20px 0;
+    margin:15px 0;
 }
 
 .subtitle{
@@ -63,9 +88,20 @@ body{
 }
 
 .enter{
-    margin-top:40px;
-    padding:16px 50px;
+    margin-top:45px;
+    padding:18px 60px;
+
     border:1px solid #bba98e;
+    background:rgba(255,255,255,0.3);
+
     text-decoration:none;
     color:#352b22;
+
+    letter-spacing:3px;
+
+    transition:0.3s;
+}
+
+.enter:hover{
+    background:#e8ddcc;
 }
