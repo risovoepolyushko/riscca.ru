@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RISCCA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="page">
+<!-- Фоновые элементы -->
+
+<div class="background"></div>
+<div class="grain"></div>
+<div class="shadow"></div>
+
+<!-- Левая декоративная ветка -->
+
+<div class="branch-left"></div>
+
+<!-- Правый свиток -->
+
+<div class="scroll-right"></div>
+
+<div class="wrapper">
+
+    <!-- Левое меню -->
 
     <aside class="sidebar">
 
@@ -18,34 +44,64 @@
         </div>
 
         <nav>
-            <a href="#">ГЛАВНАЯ</a>
-            <a href="klyatvy/index.html">ЗАБЫТЫЕ КЛЯТВЫ</a>
-            <a href="klyatvy/characters.html">ПЕРСОНАЖИ</a>
-            <a href="klyatvy/gallery.html">ГАЛЕРЕЯ</a>
-            <a href="diary.html">ДНЕВНИК АВТОРА</a>
-            <a href="about.html">ОБО МНЕ</a>
+
+            <a href="#">Главная</a>
+
+            <a href="klyatvy/index.html">Клятвы</a>
+
+            <a href="klyatvy/characters.html">Персонажи</a>
+
+            <a href="world.html">Мир</a>
+
+            <a href="gallery.html">Галерея</a>
+
+            <a href="soundtrack.html">Саундтрек</a>
+
+            <a href="about.html">Об авторе</a>
+
         </nav>
 
     </aside>
 
+    <!-- Центральная часть -->
+
     <main class="hero">
 
-        <div class="seal">夢の終わり</div>
+        <div class="kanji">
+
+            影の記憶
+
+        </div>
 
         <h1>RISCCA</h1>
 
-        <p class="subtitle">
+        <p>
+
             темно-романтические<br>
             исторические драмы
+
         </p>
 
-        <a class="enter" href="klyatvy/index.html">
+        <div class="divider"></div>
+
+        <a href="klyatvy/index.html" class="button">
+
             ВОЙТИ В ИСТОРИЮ
+
         </a>
+
+        <div class="scroll-down">
+
+            ПРОКРУТИТЕ
+
+        </div>
 
     </main>
 
 </div>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
