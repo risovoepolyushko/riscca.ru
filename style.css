@@ -235,9 +235,9 @@ body{
 
 .stamp{
 
-writing-mode:vertical-rl;
+writing-mode:horizontal-tb;
 
-font-size:48px;
+font-size:42px;
 
 color:#8b2d2d;
 
