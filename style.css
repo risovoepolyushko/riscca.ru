@@ -1,12 +1,8 @@
 body{
-   margin:0;
-    background:
-        radial-gradient(circle at top right,
-        rgba(80,60,40,0.05), transparent 40%),
-        #f4efe6;
-    color:#352b22;
+    margin:0;
+    background:#f3eee6;
     font-family:Georgia, serif;
-    line-height:1.7;
+    color:#3a2f26;
 }
 
 .page{
@@ -14,41 +10,34 @@ body{
     min-height:100vh;
 }
 
+/* ЛЕВАЯ ПАНЕЛЬ */
 .sidebar{
-     width:280px;
-    padding:90px 60px;
-    background:rgba(255,255,255,0.18);
+    width:260px;
+    padding:80px 50px;
     border-right:1px solid #d8cdbd;
-    box-shadow:
-        inset -20px 0 30px rgba(0,0,0,0.03);
+    background:#f6f1e8;
 }
 
-.logo-small{
+.logo{
     font-size:28px;
     letter-spacing:6px;
-    margin-bottom:70px;
+    margin-bottom:60px;
 }
 
 .sidebar nav{
     display:flex;
     flex-direction:column;
-    gap:25px;
+    gap:22px;
 }
 
 .sidebar nav a{
     text-decoration:none;
-    color:#352b22;
-    letter-spacing:3px;
+    color:#3a2f26;
     font-size:14px;
-    padding:8px 0;
-    transition:0.3s;
+    letter-spacing:2px;
 }
 
-.sidebar nav a:hover{
-    transform:translateX(10px);
-    opacity:0.7;
-}
-
+/* ЦЕНТР */
 .hero{
     flex:1;
     display:flex;
@@ -56,52 +45,32 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:50px;
+    padding:40px;
 }
 
 .seal{
-    width:70px;
-    height:70px;
-    border:2px solid #8b2f2f;
-    border-radius:4px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
+    font-size:40px;
     color:#8b2f2f;
-    font-size:28px;
-
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 
-.hero h1{
-    font-size:96px;
-    letter-spacing:18px;
+h1{
+    font-size:90px;
+    letter-spacing:15px;
+    margin:0;
     font-weight:300;
-    margin:15px 0;
 }
 
 .subtitle{
     font-size:20px;
-    line-height:1.8;
+    margin-top:20px;
+    opacity:0.8;
 }
 
 .enter{
-    margin-top:45px;
-    padding:18px 60px;
-
+    margin-top:40px;
+    padding:16px 50px;
     border:1px solid #bba98e;
-    background:rgba(255,255,255,0.3);
-
     text-decoration:none;
-    color:#352b22;
-
-    letter-spacing:3px;
-
-    transition:0.3s;
-}
-
-.enter:hover{
-    background:#e8ddcc;
+    color:#3a2f26;
 }
