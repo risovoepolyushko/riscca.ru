@@ -231,3 +231,126 @@ body{
     box-shadow:0 12px 25px rgba(0,0,0,.12);
 
 }
+/* ---------- КРАСНАЯ ПЕЧАТЬ ---------- */
+
+.stamp{
+
+writing-mode:vertical-rl;
+
+font-size:48px;
+
+color:#8b2d2d;
+
+margin-bottom:25px;
+
+opacity:.85;
+
+animation:fadeUp 1.8s ease;
+
+}
+
+/* ---------- ЛИНИЯ ---------- */
+
+.line{
+
+width:170px;
+
+height:1px;
+
+background:#b79f7c;
+
+margin:30px 0;
+
+opacity:.6;
+
+}
+
+/* ---------- ПОДЗАГОЛОВОК ---------- */
+
+.subtitle{
+
+font-size:26px;
+
+line-height:1.8;
+
+letter-spacing:1px;
+
+color:#56453a;
+
+animation:fadeUp 2.2s ease;
+
+}
+
+/* ---------- КНОПКА ---------- */
+
+.button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.button::before{
+
+content:"";
+
+position:absolute;
+
+left:-120%;
+
+top:0;
+
+width:120%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.55),
+
+transparent);
+
+transition:1s;
+
+}
+
+.button:hover::before{
+
+left:130%;
+
+}
+
+/* ---------- АНИМАЦИЯ ---------- */
+
+.hero h1{
+
+animation:fadeUp 1.3s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
